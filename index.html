@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" href="styles.css" />
+
+<body>
+  
+ 
+  <form id="survey-form">
+<section class="section-1" id="section-1"><main>
+    <div class="input-element">
+<label id="name-label"><br>
+  <h3>This is my solution of the</h3><h1 id="title">freeCodeCamp Survey Form </h1>
+  <b>Name</b>
+</label>
+<input class="short" placeholder="name" type="text" id="name"required />
+<!--<input class="short" type="checkbox" value="name" onclick="myFunction01()"></input>-->
+
+<div class="input-element">
+<label id ="email-label">
+  <b>Email</b>
+</label>
+<input class="short"placeholder="email" type="email" id="email" required/>
+<!--<input class="short"type="checkbox" value="email" onclick="myFunction02()"></input>-->
+</div> 
+
+<div class="input-element">
+<label id="number-label">
+ <b> Age </b>
+</label>
+<input class="short"placeholder="age" type="number" id="number" min="16" max="100" required/>
+<!--<input class="short"type="checkbox" value="number" onclick="myFunction03()"></input>-->
+</div>
+
+
+<div class="input-element">
+<label id="select-label">
+  <h3>Please describe your current status</h3>
+</label>
+<select id="dropdown" onchange="myFunction()" required>
+  <option>Student</option>
+  <option>Full Time Job</option>
+  <option>Part Time Job</option>
+  <option>Part Time Learner</option>
+  <option>Other</option>
+</select>
+
+</div>
+<div>
+  <label><h3>Have You heard about freeCodeCamp before?</h3></label>
+  <div>
+  <label>
+  <input type="radio"  name="game" onclick="myFunction05(this.value)" value="Yes"/><b>Yes</b></label>
+  </div>
+  <div>
+  <label>
+  <input type="radio" name="game" onclick="myFunction05(this.value)" value="No"/><b>No</b></label>
+</div>
+
+
+
+<!--<a id="btn" type="submit" onclick="window.location.href='#section-2',myFunction01(),myFunction02(),myFunction03()">Next</a>-->
+
+</form></main></section>
+
+ 
+  <form id="survey-form">
+<section class="section-2" id="section-2">
+    <div class="input-element">
+<label id="name-label"><main>
+
+
+
+<div>
+  <label><h3> Which of my freeCodeCamp Responsive Web Design Projects  You like?</h3></label>
+  <div>
+  <label><input type="checkbox" class="any"  name="play" onclick="myFunctionA(this.value)"value="Tribute Page"/><b>Tribute Page</b></label>
+  </div><br>
+  <div>
+  <label>
+  <input type="checkbox" class="any"  name="ticket" onclick="myFunctionB(this.value)" value="Survey Form"/><b>Survey Form</b></label>
+</div><br>
+<div>
+  <label><input type="checkbox" class="any"  name="fans" onclick="myFunctionC(this.value)" value="Product Landing Page"/><b>Product Landing Page</b></label>
+  </div><br>
+  <div>
+  <label>
+  <input type="checkbox" class="any"  name="spons" onclick="myFunctionD(this.value)" value="Technical Documentation Page"/><b>Technical Documentation Page</b></label>
+</div><br>
+ <div>
+  <label>
+  <input type="checkbox" class="any" name="chill" onclick="myFunctionE(this.value)"value="Personal Portfolio Webpage"/><b>Personal Portfolio Webpage</b></label>
+</div>
+</div><br><br><br>
+<label><b>RATE ME</b></label><br><br>
+<div class="center">
+<div class="stars">  
+  <input type="radio" id="five" name="rate9" value="100%" onclick="myFunction9(this.value)">
+  <label for="five" ></label>
+
+  <input type="radio" id="four" name="rate9" value="75%" onclick="myFunction9(this.value)">
+  <label for="four" ></label>
+
+  <input type="radio" id="three" name="rate9" value="50%" onclick="myFunction9(this.value)">
+  <label for="three" ></label>
+
+  <input type="radio" id="two" name="rate9" value="25%" onclick="myFunction9(this.value)">
+  <label for="two"></label>
+
+  <input type="radio" id="one" name="rate9" value="0%" onclick="myFunction9(this.value)">
+  <label for="one"></label>
+  
+  <span class="result"></span>
+</div>
+</div><br><br><br>
+<div class="input-elements">
+ <label><b>Additional comments:<?b><br></label>
+  <textarea maxlength="100"  type="text" id="myText"
+  rows="6" cols="23" class="hype"></textarea>
+ 
+<!--</div><input type="checkbox" value="comments" onclick="myFunction0()" id="sub" name="sub" value="comment">-->
+<h3 id="title"><p id="description">Visit my: <a href="https://github.com/bugxbug" target="_blank"><b>Github</b></a> ,
+ <a href="https://www.linkedin.com/in/i%C4%BCja-prostibo%C5%BEenko-1439201b5/" target="_blank"><b>Linkedin ✉</b></a></p></h3>
+<a id="btn1" type="submit" onclick="window.location.href='#section-4',myFunction01(),myFunction02(),myFunction03(),myFunction0()" href="#section-2">Submit</a><br><br>
+</form></main></section>
+
+
+   
+
+  
+  
+
+
+
+
+</form>
+</main>
+</section>
+
+ <form id="survey-form">
+<section class="section-2" id="section-2">
+    <div class="input-element">
+<label id="name-label"><main><br>
+ 
+
+  
+  <p>Your Name:
+
+<textarea "name="demo01" id="demo01"class="hype" rows="1" cols="15"></textarea></p>
+<script>
+function myFunction01() {
+  var x = document.getElementById("name").value;
+  document.getElementById("demo01").innerHTML = x;
+}
+</script>
+
+  <p>Your Email:
+  <textarea id="demo02" rows="1" cols="15"class="hype"></textarea></p>
+ 
+  
+<script>
+function myFunction02() {
+  var x = document.getElementById("email").value;
+  document.getElementById("demo02").innerHTML = x;
+}
+</script>
+  <p>Your Age:
+  <textarea id="demo03" class="hype" cols="4" rows="1"></textarea></p>
+<script>
+function myFunction03() {
+  var x = document.getElementById("number").value;
+  document.getElementById("demo03").innerHTML = x;
+}
+</script>
+  <p>Your current status: <textarea rows="1" cols="17" type="text" class="hype" id="demo" ></textarea></p>
+  
+</form>
+
+<script>
+function myFunction() {
+  var dropdown = document.getElementById("dropdown");
+  document.getElementById("demo").value = dropdown.options[dropdown.selectedIndex].text;
+}
+</script>
+  <p>Have You heard about freeCodeCamp before?<textarea rows="1" cols="6" type="text"
+  class="hype" id="result">
+  </textarea></p> 
+  <script>
+function myFunction05(game) {
+  document.getElementById("result").value = game;
+}
+</script>
+
+
+ <p>Best Projects:<textarea rows="1" cols="11" type="text"
+  class="hype" id="resultA" >
+  </textarea>
+  <script>
+function myFunctionA(play) {
+  document.getElementById("resultA").value = play;
+}
+</script>
+<textarea rows="1" cols="10" type="text"
+  class="hype" id="resultB" >
+  </textarea>
+<script>
+function myFunctionB(ticket) {
+  document.getElementById("resultB").value = ticket;
+}
+</script>
+<textarea rows="1" cols="19" type="text"
+  class="hype" id="resultC" >
+  </textarea>
+<script>
+function myFunctionC(fans) {
+  document.getElementById("resultC").value = fans;
+}
+</script>
+<textarea rows="1" cols="27" type="text"
+  class="hype" id="resultD" >
+  </textarea>
+
+<script>
+function myFunctionD(spons) {
+  document.getElementById("resultD").value = spons;
+}
+</script>
+
+
+<textarea rows="1" cols="25" type="text"
+  class="hype" id="resultE" >
+  </textarea>
+
+
+<script>
+function myFunctionE(chill) {
+  document.getElementById("resultE").value = chill;
+}
+</script>
+  
+
+
+  <p>Your Rate:
+     <textarea id="result9" class="hype" cols="3" rows="1"></textarea></p>
+<script>
+function myFunction9(rate9) {
+  document.getElementById("result9").value = rate9;
+}
+</script>
+  </p>
+ <p>Your Comment:<textarea rows="6" cols="23"maxlength="100" id="demo1" class="hype" ></textarea></p>
+
+
+<script>
+function myFunction0() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("demo1").innerHTML = x;
+}
+</script>
+<button type="submit" id="submit" onclick="window.location.href='#section-1'">Start Again</button>
+ </form>
+</main>
+</section>
+</body>
+</html>
+
+
