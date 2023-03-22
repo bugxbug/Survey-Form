@@ -241,3 +241,11 @@ body {
     color:red;
     font-weight: 900;
   }
+
+a{
+   display: inline-block;
+   text-align: center; 
+   margin: 20;
+   scale: 2.0;
+  
+}
