@@ -103,9 +103,10 @@
      /*border: 4px solid grey;*/
   }
   
-  .short, #dropdown{
-    width: 50%;
+   .short, #dropdown{
+    width: 60%;
     margin: auto;
+    padding: 0.3rem
   }
   
   #btn, #submit, #btn1 {
