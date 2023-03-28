@@ -5,42 +5,46 @@ body {
     height: 100%;}*/
     
     * {
-        scrollbar-width: auto;
-          scrollbar-color: red transparent;}
-    #img-caption{
-      color: yellow;
-      
+      scrollbar-width: auto;
+        scrollbar-color: red transparent;}
+  #img-caption{
+    color: yellow;
+    
+  }
+  
+  
+  *::-webkit-scrollbar {
+    width: 16px;
+    
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: yellow;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 0px;
+    border: 3px solid red;
     }
-    
-    
-    *::-webkit-scrollbar {
-      width: 16px;
-      
-    }
-    
-    *::-webkit-scrollbar-track {
-      background: yellow;
-    }
-    
-    *::-webkit-scrollbar-thumb {
-      background-color: red;
-      border-radius: 0px;
-      border: 3px solid red;
-      }
-      @media (max-width:460px)
-      {*::-webkit-scrollbar-thumb{
-        background-color: yellow;
-      }}
+    @media (max-width:420px)
+    {*::-webkit-scrollbar-thumb{
+      background-color: yellow;
+    }}
+   
+    .a{
+      display: inline-block;
+     text-align: center; 
+     margin: 4rem;
+     scale: 5;
      
-      .a{
-        display: inline-block;
-       text-align: center; 
-       margin: 4rem;
-       scale: 5;
-       
-      }
+    }
+    @media (max-width:980px)/*IMPORTANT TEXT SIZE*/
+  { h1,h2,h3,h4,h5,h6{
+     scale:1.5;
+   }}
     .img{
-      width: 35%;
+      width: 15%;
     display: block;
     max-width: 100%;
     height: auto;
@@ -48,218 +52,278 @@ body {
     
     /*border: 5px solid yellow;*/
     }
-        .hype{
-          background-color: black;
-          color:orangered;
-          overflow: hidden;
-          resize:none;
-          margin: 4;
-          border: 5px solid yellow;
-        
+  
+      @media (max-width: 980px){
+        .img{
+          width: 15%;
+          display: block;
+          max-width: 100%;
+          height: auto;
+          margin:10rem auto;
+  
         }
-    
-    body{
-      background-color:hsl(60, 87%, 55%);
-      text-align: center; 
-       font-family: 'Courier New', monospace;
-        color: rgb(226, 22, 11);
-        user-select: none;
-        margin: auto;
-        padding: 10;
       }
+        
+      .hype{/*textarea*/
+        background-color: black;
+        color:orangered;
+        overflow: hidden;
+        resize:none;
+        margin: 4;
+        border: 5px solid yellow;
       
-      
-        body::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      z-index: -1;
-      background-image: linear-gradient(
-          115deg,
-          rgba(255,255,0, 0.8),
-          rgba(7, 60, 2, 0.6)
-        ),
-        url(https://img.freepik.com/free-photo/outdoor-rich-bright-texture-color_1258-140.jpg?w=996&t=st=1679247618~exp=1679248218~hmac=efdf393ba14a4472c3edf02e8c6d6b3b674d13a889e7c3d0e4db80b417d0c201);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-      
-        section {/*box-top*/
-        padding: 0px;
-        overflow-y: hidden;
-       }
-    
-       main {/*box-style*/
-        border-radius: 0px;
-        padding: 10px 0px 0px;
-        width: 100%;
-        max-width: 500px;
-        margin:  auto  ;
-       /*border: 4px solid grey;*/
-    }
-    
-    .short, #dropdown{
-      width: 50%;
+      }
+  
+  body{
+    background-color:hsl(60, 87%, 55%);
+    text-align: center; 
+     font-family: 'Courier New', monospace;
+      color: rgb(226, 22, 11);
+      user-select: none;
       margin: auto;
-    }
-    #btn, #submit, #btn1 {
-        border: 5px solid black;
-        border-radius:0px ;
-        color: #000;
-        display: block;
-        font-size: 1.3rem;
-        background:red;
-        font-weight: 600;
-        width: 30%;
-        margin: auto;
-        outline: none;
-        padding: 4px 0;
-        text-align: center;
-        
+      padding: 10;
     }
     
     
-    .input-element{
-      display: flex;
-      margin: 0px;
-      flex-direction: column;
-      font-size: 1.2rem;
-    }
-    input, select{
-      background-color: black;
-      color: red;
-      font-size: 1.2rem;
-      padding:5px;
-      border: none;
+      body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(
+        115deg,
+        rgba(255,255,0, 0.8),
+        rgba(7, 60, 2, 0.6)
+      ),
+      url(https://img.freepik.com/free-photo/outdoor-rich-bright-texture-color_1258-140.jpg?w=996&t=st=1679247618~exp=1679248218~hmac=efdf393ba14a4472c3edf02e8c6d6b3b674d13a889e7c3d0e4db80b417d0c201);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+    
+      section {/*box-top*/
+      padding: 0px;
+      overflow-y: hidden;
+     }
+  
+     main {/*box-style*/
       border-radius: 0px;
-      border: 5px solid yellow;
-    }
-    input[type="radio"]{
-      width: 26px;
-    height: 16px;
-      margin: px auto;
-      
-    }
-    input[type="checkbox"]{
-    width: 26px;
-    height: 16px;
-    margin: px auto;
-    
-    }
-    
-    .center{
-      position: absolute;
-    
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .center .stars{
-      text-align: center;
-     
-    }
-    .stars label{
-    float: right;
-    font-size: 35px ;
-    color: white;
-    margin: 0 2px;
-    text-shadow: 1px 1px #bbb;
-    }
-    .stars label:before{
-    content:"★"
-    }
-    .stars input{
-      display: none;
-    }
-    .stars input:checked~label{
-     color:red;
-    text-shadow: 1px 1pxred;
-    }
-    .stars:not(:checked) > label:hover,
-    .stars:not(:checked) > label:hover~label{
-      color:red;
-    }
-    .stars input:checked > label:hover,
-    .stars input:checked > label:hover~label{
-      color:red;
-    text-shadow: 1px 1px goldenrod;
-    }
-    .stars .result:before {
-      position: absolute;
-      content: '';
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: -30px;
-      font-size: 20px;
-      font-weight: 700;
-      color:red ;
-      display: none;
-    }
-    .stars input:checked ~ .result:before {
-      display: block;
-    }
-    .stars #five:checked ~ .result:before {
-    content:"100%" ;
-    }
-    .stars #four:checked ~ .result:before {
-    content:"75%" ;
-    }
-    .stars #three:checked ~ .result:before {
-    content:"50%" ;
-    }
-    .stars #two:checked ~ .result:before {
-    content:"25%" ;
-    }
-    .stars #one:checked ~ .result:before {
-    content:"0%" ;
-    }
-    
-    
-    textarea{
-      
-      border: none;
-      border-radius: 0px;
-      font-size: 1.3rem;
-    }
-      @media (min-width: 1000px){
-          img{
-          scale: 0.6;
-          padding: 0 ;
-          
-        }
-      }
-    
-    @media (max-width: 420px){
-        img{
-          scale: 0.7;
-          
-        }
-      .stars label{
-        font-size: 20px;
-        margin: 2px 0 px  -12
-      }
-    }
-    @media (max-width: 320px){
-      .stars label{
-        font-size: 20px;
-        margin: 2px 0 -12
-      }
-    }
-    
-    #sub{
-      background:orange;
-      color:red;
-      font-weight: 900;
-    }
-    
-  a{
-     display: inline-block;
-     text-align: center; 
-     margin: 20;
-     scale: 2.0;
-    
+      padding: 10px 0px 0px;
+      width: 100%;
+      max-width: 500px;
+      margin:  auto  ;
+     /*border: 4px solid grey;*/
   }
   
+  .short, #dropdown{
+    width: 50%;
+    margin: auto;
+  }
+  @media (max-width:980px){
+    .short, #dropdown{
+    width: 50%;
+    margin: auto;
+   scale:2;
+  }
+}
+  #btn, #submit, #btn1 {
+      border: 5px solid black;
+      border-radius:0px ;
+      color: #000;
+      display: block;
+      font-size: 1.3rem;
+      background:red;
+      font-weight: 600;
+      width: 30%;
+      margin: auto;
+      outline: none;
+      padding: 4px 0;
+      text-align: center;
+      
+  }
+  @media (max-width: 980px){
+    #btn, #submit, #btn1 {
+       border: 5px solid black;
+       border-radius:0px ;
+       color: #000;
+       display: block;
+       font-size: 2rem;
+       background:red;
+       font-weight: 600;
+       width: 40%;
+       margin:5rem auto;
+       outline: none;
+       padding: 10px 10px;
+       text-align: center;
+      scale: 1.5;
+       
+  }}
+  
+  
+  .input-element{
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+  input, select{
+    background-color: black;
+    color: red;
+    font-size: 1.2rem;
+    padding:5px;
+    border: none;
+    border-radius: 0px;
+    border: 5px solid yellow;
+  }
+  input[type="radio"]{
+    width: 26px;
+  height: 16px;
+    margin: px auto;
+    
+  }
+  input[type="checkbox"]{
+  width: 26px;
+  height: 16px;
+  margin: px auto;
+  
+  }
+  @media (max-width:980px){
+    input[type="radio"],[type="checkbox"]{
+    width: 26px;
+  height: 16px;
+    margin: px auto;
+      scale: 2;
+}}
+  
+  .center{
+    position: absolute;
+  
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .center .stars{
+    text-align: center;
+   
+  }
+  .stars label{
+  float: right;
+  font-size: 35px ;
+  color: white;
+  margin: 0 2px;
+  text-shadow: 1px 1px #bbb;
+  }
+  @media (max-width:980px){
+    .stars label{
+     float: right;
+     font-size: 85px ;
+     color: white;
+     margin: 0 2px;
+     text-shadow: 1px 1px #bbb;
+     }
+    }
+  .stars label:before{
+  content:"★"
+  }
+  .stars input{
+    display: none;
+  }
+  .stars input:checked~label{
+   color:red;
+  text-shadow: 1px 1pxred;
+  }
+  .stars:not(:checked) > label:hover,
+  .stars:not(:checked) > label:hover~label{
+    color:red;
+  }
+  .stars input:checked > label:hover,
+  .stars input:checked > label:hover~label{
+    color:red;
+  text-shadow: 1px 1px goldenrod;
+  }
+  .stars .result:before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    font-size: 20px;
+    font-weight: 700;
+    color:red ;
+    display: none;
+  }
+  .stars input:checked ~ .result:before {
+    display: block;
+  }
+  .stars #five:checked ~ .result:before {
+  content:"100%" ;
+  }
+  .stars #four:checked ~ .result:before {
+  content:"75%" ;
+  }
+  .stars #three:checked ~ .result:before {
+  content:"50%" ;
+  }
+  .stars #two:checked ~ .result:before {
+  content:"25%" ;
+  }
+  .stars #one:checked ~ .result:before {
+  content:"0%" ;
+  }
+  
+  
+  textarea{
+    
+    border: none;
+    border-radius: 0px;
+    font-size: 1.3rem;
+  }
+  @media (min-width: 980px){
+    textarea{
+     
+     border: none;
+     border-radius: 0px;
+     font-size: 2.8rem;
+   }}
+
+    @media (min-width: 1000px){
+        img{
+        scale: 0.6;
+        padding: 0 ;
+        
+      }
+    }
+  
+  @media (max-width: 420px){
+      img{
+        scale: 0.7;
+        
+      }
+    .stars label{
+      font-size: 20px;
+      margin: 2px 0 px  -12
+    }
+  }
+  @media (max-width: 320px){
+    .stars label{
+      font-size: 20px;
+      margin: 2px 0 -12
+    }
+  }
+  
+  #sub{
+    background:orange;
+    color:red;
+    font-weight: 900;
+  }
+  
+  /*.a{
+    display: inline-block;
+    text-align: center; 
+    margin: 20;
+    scale: 4.0;
+   
+ }*/
+ 
