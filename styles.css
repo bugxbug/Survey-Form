@@ -35,6 +35,7 @@
      scale: 5;
      
     }
+ img/*linkedin,github*/{margin:0  2rem ;}
    
     .img{
       width: 15%;
@@ -238,7 +239,7 @@
       }
     }
 
- @media (min-width: 520px) and (max-width: 1200px) {
+ @media (min-width: 520px) and (max-width: 1600px) {
       textarea{
        
        border: none;
