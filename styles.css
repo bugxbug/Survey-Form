@@ -280,7 +280,7 @@ body {
     border-radius: 0px;
     font-size: 1.3rem;
   }
-  @media (min-width: 980px){
+  @media (max-width: 980px){
     textarea{
      
      border: none;
