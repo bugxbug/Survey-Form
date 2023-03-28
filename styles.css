@@ -295,22 +295,7 @@
   
   }
   
-  @media (max-width: 420px){
-      img{
-        scale: 0.7;
-        
-      }
-    .stars label{
-      font-size: 20px;
-      margin: 2px 0 px  -12
-    }
-  }
-  @media (max-width: 320px){
-    .stars label{
-      font-size: 20px;
-      margin: 2px 0 -12
-    }
-  }
+ 
   
   #sub{
     background:orange;
